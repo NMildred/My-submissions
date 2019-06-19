@@ -9,3 +9,6 @@ if __name__ == '__main__':
         scores = map(float, scores)
         student_marks[name] = scores
     query_name = raw_input()
+    query_scores = student_marks[query_name]
+    
+    print("{0:.2f}".format(sum(query_scores)/(len(query_scores))))
